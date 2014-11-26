@@ -1,8 +1,9 @@
 Source: python-efl
 Section: unknown
+Version: 0.1.0
 Priority: extra
 Maintainer: Eric W. Brown
-Uploaders: Jeff Hoogland, Doug Yanez
+#Uploaders: Jeff Hoogland, Doug Yanez
 Build-Depends: efl, elementary, python-pyrex, python-all-dev
 Standards-Version: 3.8.3
 
