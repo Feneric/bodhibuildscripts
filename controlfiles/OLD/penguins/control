@@ -1,14 +1,13 @@
-Source: places
+Source: penguins
 Section: unknown
 Priority: extra
 Maintainer: root <jeffhoogland@linux.com>
-Build-Depends: e19
-Conflicts: e17
+Build-Depends: enlightenment
 Standards-Version: 3.8.3
 Homepage: <insert the upstream URL, if relevant>
 
-Package: places
+Package: penguins
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Places Modules for E19
- A module that allows you to integrate non-EFM file managers into the Enlightenment desktop
+Description: penguins
+ Have penguins crawl all over your E desktop!

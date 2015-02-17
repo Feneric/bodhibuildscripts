@@ -1,14 +1,14 @@
-Source: forecasts
+Source: efx
 Section: unknown
 Priority: extra
-Maintainer: Jeff Hoogland <jeffhoogland@linux.com>
+Maintainer: root <jeffhoogland@linux.com>
 Build-Depends: e19
 Conflicts: e17
 Standards-Version: 3.8.3
 Homepage: <insert the upstream URL, if relevant>
 
-Package: forecasts
+Package: efx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Forecasts Module E19
- Get weather updates on your desktop! Enlightenment Module.
+Description: efx package for E19
+ Adds extras that desksanity requires for e19
