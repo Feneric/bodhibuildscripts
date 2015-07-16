@@ -8,24 +8,15 @@
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
-CFLAGS = -g -O2 #-fvisibility=hidden -ffast-math
-CXXFLAGS = -g -O2
-LDFLAGS = 
-CPPFLAGS = 
 
-export PYBUILD_NAME = efl
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
 
 %:
-	dh $@ --with python2,python3 --buildsystem=pybuild
-        
-override_dh_python3:
-	dh_python3 --shebang=/usr/bin/python3
+	dh $@  --with autotools-dev
 
-#override_dh_auto_install:
-#	python3 setup.py install
+override_dh_strip:
+	dh_strip --dbg-package=e19-dbg
 
-#override_dh_auto_configure:
-#	dh_auto_configure -- --with-tests=none
-
-#override_dh_strip:
-#	dh_strip --dbg-package=python-efl
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/e19
